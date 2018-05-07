@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import './style.css';
+import iconUrl from './location.png';
 
 function component() {
   var element = document.createElement('div');
@@ -7,6 +8,10 @@ function component() {
   element.innerHTML = _.join(['Hello', 'webpack', 'he he,test it'], ' ');
   element.classList.add('hello');
 
+  //添加图片
+  const icon=new Image();
+  icon.src=iconUrl;
+  element.appendChild(icon);
   return element;
 }
 
