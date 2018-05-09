@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import './style.css';
 import iconUrl from './location.png';
+import {cube} from './math';
 
 function component() {
   var element = document.createElement('div');
